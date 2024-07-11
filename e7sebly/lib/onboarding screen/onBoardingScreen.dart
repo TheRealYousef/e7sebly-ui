@@ -216,7 +216,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                                         size: 20,
                                       ),
                                       style: ElevatedButton.styleFrom(
-                                        primary: const Color(0XFFFFD323),
+                                        backgroundColor: const Color(0XFFFFD323),
                                         shape: CircleBorder(),
                                         elevation: 0,
                                         padding: (width <= 550)
@@ -236,7 +236,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          primary: const Color(0XFF3788FF),
+                          backgroundColor: const Color(0XFF3788FF),
                           elevation: 0,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50),
@@ -289,7 +289,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                               size: 20,
                             ),
                             style: ElevatedButton.styleFrom(
-                              primary: const Color(0XFF3788FF),
+                              backgroundColor: const Color(0XFF3788FF),
                               shape: CircleBorder(),
                               elevation: 0,
                               padding: (width <= 550)

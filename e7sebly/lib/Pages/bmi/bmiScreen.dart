@@ -55,7 +55,7 @@ class _BmiScreenState extends State<BmiScreen> {
           centerTitle: true,
         ),
         body:SafeArea(
-          child: ,
+          child: Container(),
 
         ),
 
