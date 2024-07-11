@@ -1,0 +1,57 @@
+import 'dart:async';
+import 'package:flutter/material.dart';
+
+import '../onboarding screen/onBoardingScreen.dart';
+
+class SplashScreen extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => StartState();
+}
+
+class StartState extends State<SplashScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return initScreen(context);
+  }
+
+
+  @override
+  void initState() {
+    super.initState();
+    startTimer();
+  }
+
+  startTimer() async {
+    var duration = Duration(seconds: 2);
+    return new Timer(duration, route);
+  }
+
+  route() {
+    Navigator.pushReplacement(context, MaterialPageRoute(
+        builder: (context) => const OnboardingScrn()
+    )
+    );
+  }
+
+  initScreen(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    var height = size.height;
+    var width = size.width;
+
+    return  Scaffold(
+      backgroundColor:Colors.white,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            SizedBox(
+              height: height/4,
+              width: width/4,
+              child: Image.asset("assets/img/logos/icon.png"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
