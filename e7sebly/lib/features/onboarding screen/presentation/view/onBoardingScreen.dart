@@ -1,8 +1,7 @@
-import 'package:e7sebly/resources/styles.dart';
+import 'package:e7sebly/core/util/styles.dart';
+import 'package:e7sebly/core/util/sizeConfig.dart';
+import 'package:e7sebly/features/onboarding%20screen/data/onboardingContents.dart';
 import 'package:flutter/material.dart';
-import '../Pages/MainPage.dart';
-import '../sizeConfig.dart';
-import 'onboardingContnentsScreen.dart';
 
 class OnboardingScrn extends StatefulWidget {
   const OnboardingScrn({Key? key}) : super(key: key);
@@ -118,7 +117,6 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                 ),
               ),
               Expanded(
-
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -216,7 +214,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                                         size: 20,
                                       ),
                                       style: ElevatedButton.styleFrom(
-                                        primary: const Color(0XFFFFD323),
+                                        backgroundColor: const Color(0XFFFFD323),
                                         shape: CircleBorder(),
                                         elevation: 0,
                                         padding: (width <= 550)
@@ -236,7 +234,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          primary: const Color(0XFF3788FF),
+                          backgroundColor: const Color(0XFF3788FF),
                           elevation: 0,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50),
@@ -289,7 +287,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                               size: 20,
                             ),
                             style: ElevatedButton.styleFrom(
-                              primary: const Color(0XFF3788FF),
+                              backgroundColor: const Color(0XFF3788FF),
                               shape: CircleBorder(),
                               elevation: 0,
                               padding: (width <= 550)

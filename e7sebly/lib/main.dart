@@ -1,16 +1,17 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:e7sebly/features/SplashScreen/presentation/view/SplashScreen.dart';
+import 'package:e7sebly/features/azkar/presentation/view/azkar.dart';
+import 'package:e7sebly/features/bmi/presentation/view/bmiScreen.dart';
+import 'package:e7sebly/features/calculator/presentation/view/Calculator.dart';
+import 'package:e7sebly/features/gpa/presentation/view/Gpa.dart';
+import 'package:e7sebly/features/qrcode/presentation/view/QrCode.dart';
 import 'package:flutter/material.dart';
-
-import 'Pages/MainPage.dart';
-import 'Pages/azkar/azkar.dart';
-import 'Pages/bmi/Bmi.dart';
-import 'Pages/bmi/bmiScreen.dart';
-import 'Pages/calculator/Calculator.dart';
-import 'Pages/gpa/Gpa.dart';
-import 'Pages/qrcode/QrCode.dart';
-import 'SplashScreen/SplashScreen.dart';
+import 'features/home/presentation/view/MainPage.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(builder: (context) => const MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -19,19 +20,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp
-      (
-        debugShowCheckedModeBanner: false,
-        home: SplashScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
       routes: {
-          "azkar":(context)=>  const Azkarpage(),
-          "bmi":(context)=>  const BmiScreen(),
-          "calc":(context)=>  Calculator(),
-          "gpa":(context)=>  const gpa(),
-          "qrcode":(context)=>  const qrcode(),
-          "main":(context)=>  const home(),
+        "azkar": (context) => const Azkarpage(),
+        "bmi": (context) => const BmiScreen(),
+        "calc": (context) => Calculator(),
+        "gpa": (context) => const gpa(),
+        "qrcode": (context) => const qrcode(),
+        "main": (context) => const home(),
       },
-
     );
   }
 }

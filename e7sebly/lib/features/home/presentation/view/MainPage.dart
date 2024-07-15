@@ -1,12 +1,10 @@
-
-import 'package:e7sebly/Pages/qrcode/QrCode.dart';
+import 'package:e7sebly/features/bmi/presentation/view/bmiScreen.dart';
+import 'package:e7sebly/features/calculator/presentation/view/Calculator.dart';
+import 'package:e7sebly/features/gpa/presentation/view/Gpa.dart';
+import 'package:e7sebly/features/qrcode/presentation/view/QrCode.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../sizeConfig.dart';
-import 'bmi/Bmi.dart';
-import 'bmi/bmiScreen.dart';
-import 'calculator/Calculator.dart';
-import 'gpa/Gpa.dart';
+import '../../../../core/util/sizeConfig.dart';
 
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
@@ -33,12 +31,12 @@ class _homeState extends State<home> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
-                        children:  const [
+                        children:  [
                           Text(
                             'نورتنا',
                             style:TextStyle(
