@@ -1,7 +1,6 @@
 import 'dart:async';
+import 'package:e7sebly/features/onboarding%20screen/presentation/view/onBoardingScreen.dart';
 import 'package:flutter/material.dart';
-
-import '../onboarding screen/onBoardingScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

@@ -40,6 +40,8 @@ dependencies:
   connectivity_plus: ^2.2.1
   unicons: ^2.1.0
   math_expressions: ^2.5.0
+  device_preview: ^1.2.0
+
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,7 @@
-import 'package:e7sebly/resources/styles.dart';
+import 'package:e7sebly/core/util/styles.dart';
+import 'package:e7sebly/core/util/sizeConfig.dart';
+import 'package:e7sebly/features/onboarding%20screen/data/onboardingContents.dart';
 import 'package:flutter/material.dart';
-import '../Pages/MainPage.dart';
-import '../sizeConfig.dart';
-import 'onboardingContnentsScreen.dart';
 
 class OnboardingScrn extends StatefulWidget {
   const OnboardingScrn({Key? key}) : super(key: key);
@@ -118,7 +117,6 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                 ),
               ),
               Expanded(
-
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
