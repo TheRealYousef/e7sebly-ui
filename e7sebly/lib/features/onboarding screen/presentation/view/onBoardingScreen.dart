@@ -250,6 +250,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                         child: const Text("يلا احسبلي",
                           style: TextStyle(
                             fontFamily: "mess_bold",
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -285,6 +286,7 @@ class _OnboardingScreenState extends State<OnboardingScrn> {
                             child: const Icon(
                                 Icons.arrow_forward_ios_sharp,
                               size: 20,
+                              color: Colors.white,
                             ),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0XFF3788FF),

@@ -41,7 +41,7 @@ class _homeState extends State<home> {
                             'نورتنا',
                             style:TextStyle(
                               color: Colors.white,
-                              fontFamily: "three",
+                              fontFamily: "mess_medium",
                               fontSize: 50,
 
                             ),
